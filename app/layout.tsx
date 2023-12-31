@@ -1,13 +1,14 @@
 import { ClerkProvider } from "@clerk/nextjs";
 import "./globals.css";
 import React from "react";
+// eslint-disable-next-line camelcase
 import { Inter, Space_Grotesk } from "next/font/google";
 import type { Metadata } from "next";
 
 const inter = Inter({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  variable: "--font-inter",
+  subsets: ["latin"], // subsets is the array of character we want to support, latin is the default
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], // weight is used to define the font-weight we want to support
+  variable: "--font-inter", // variable is the name of the css variable we want to use to inject the font-face
 });
 
 const spaceGrotesk = Space_Grotesk({
