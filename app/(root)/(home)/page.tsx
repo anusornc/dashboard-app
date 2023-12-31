@@ -1,9 +1,9 @@
-const Home = () => {
+import { UserButton } from "@clerk/nextjs";
+ 
+export default function Home() {
   return (
-    <div>
-      <h1 className="h1-bold">Hello World</h1>
-      <h1 className="h2-bold">Hello World</h1>
+    <div className="h-screen">
+      <UserButton afterSignOutUrl="/"/>
     </div>
-  );
-} 
-export default Home
+  )
+}
